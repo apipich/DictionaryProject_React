@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Definition from "./Definition.js";
 import "./Search.css";
 
 export default function Search() {
 let [word, setWord] = useState("");
+let [definition, setDefinition] = useState(null);
+
 function showResponse(response) {
-console.log(response.data[0]);
+setDefinition(response.data[0]);
 }
 
 function showWord(event) {
@@ -28,6 +31,7 @@ return (
   <input type="search" autoFocus={true} onChange={showWord}/>
   <input type="submit" value="search"/>
 </form>
+<Definition definition={definition}/>
 </div>
 ) 
   
