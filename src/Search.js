@@ -14,7 +14,7 @@ setDefinition(response.data[0]);
 function showWord(event) {
 setWord(event.target.value);
 
-let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
+let apiUrl = `api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
 axios.get(apiUrl).then(showResponse);
 
 }
@@ -22,7 +22,8 @@ axios.get(apiUrl).then(showResponse);
 
 function locate(event) {
 event.preventDefault();
-alert(`Searching for ${word}`);
+alert(`${word}`)
+  ;
   }
   
 return (
@@ -32,7 +33,8 @@ return (
   <input type="submit" value="search"/>
 </form>
 <Definition definition={definition}/>
+<h3>{}</h3>
 </div>
 ) 
-  
+
 }
