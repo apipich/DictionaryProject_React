@@ -1,39 +1,36 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Definition from "./Definition.js";
+import Information from "./Information.js";
 import "./Search.css";
 
 export default function Search() {
 let [word, setWord] = useState("");
-let [definition, setDefinition] = useState(null);
+let [info, setInfo] = useState(null);
 
 function showResponse(response) {
-setDefinition(response.data[0]);
+setInfo(response.data[0]);
 }
-
-function showWord(event) {
-setWord(event.target.value);
-
-let apiUrl = `api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
-axios.get(apiUrl).then(showResponse);
-
-}
-
 
 function locate(event) {
 event.preventDefault();
-alert(`${word}`)
-  ;
-  }
-  
+
+let apiUrl = `api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
+axios.get(apiUrl).then(showResponse);
+}
+
+function handleSubmit(event) {
+setWord(event.target.value);
+}
+
+
+
 return (
 <div className="dictionary">
 <form onSubmit={locate}>
-  <input type="search" autoFocus={true} onChange={showWord}/>
+  <input type="search" autoFocus={true} onChange={handleSubmit}/>
   <input type="submit" value="search"/>
 </form>
-<Definition definition={definition}/>
-<h3>{}</h3>
+<Information info={info} />
 </div>
 ) 
 
