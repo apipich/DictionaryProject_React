@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Information from "./Information.js";
+import Info from "./Info.js";
 import "./Search.css";
 
 export default function Search() {
-let [word, setWord] = useState("");
+let [keyword, setKeyword] = useState("");
 let [info, setInfo] = useState(null);
 
 function showResponse(response) {
@@ -14,12 +14,12 @@ setInfo(response.data[0]);
 function locate(event) {
 event.preventDefault();
 
-let apiUrl = `api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
+let apiUrl = `api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
 axios.get(apiUrl).then(showResponse);
 }
 
 function handleSubmit(event) {
-setWord(event.target.value);
+setKeyword(event.target.value);
 }
 
 
@@ -30,7 +30,7 @@ return (
   <input type="search" autoFocus={true} onChange={handleSubmit}/>
   <input type="submit" value="search"/>
 </form>
-<Information info={info} />
+<Info info={info}/>
 </div>
 ) 
 

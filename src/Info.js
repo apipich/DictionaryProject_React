@@ -1,10 +1,12 @@
 import React from "react";
 
-export default function Information(props) {
+export default function Info(props) {
+  console.log(props.info);
   if (props.info) {
 return (
   <div className="information">
-    hello
+    <h2>{props.info.word}
+    </h2>
     </div>
 );
 
