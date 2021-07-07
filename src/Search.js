@@ -14,7 +14,7 @@ setInfo(response.data[0]);
 function locate(event) {
 event.preventDefault();
 
-let apiUrl = `api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
 axios.get(apiUrl).then(showResponse);
 }
 
