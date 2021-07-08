@@ -8,7 +8,7 @@ export default function App() {
       <h1>Dictionary Project</h1>
 <Search/>
     </div>
-    <footer className="myCode"><small>Coded by Amanda Pipich</small></footer>
+    <footer className="myCode"><small><a href="https://github.com/apipich/DictionaryProject_React" target="_blank" rel="noopener noreferrer">Open-source code</a> by Amanda Pipich</small></footer>
     </div>
   );
 }
