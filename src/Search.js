@@ -22,8 +22,6 @@ function handleSubmit(event) {
 setKeyword(event.target.value);
 }
 
-
-
 return (
 <div className="dictionary">
 <form onSubmit={locate}>
@@ -33,5 +31,4 @@ return (
 <Info info={info}/>
 </div>
 ) 
-
 }
