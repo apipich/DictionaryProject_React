@@ -5,6 +5,7 @@ import "./Meaning.css";
 export default function Meaning(props) {
 return (
   <div className="details">
+    <section>
     <h4>{props.meaning.partOfSpeech}</h4>
 {props.meaning.definitions.map(function(definition, index) {
 return (
@@ -17,9 +18,8 @@ return (
 <Synonyms synonyms={definition.synonyms} />
 </div>
 )
-
 })}
-
+</section>
 </div>
 )
 }

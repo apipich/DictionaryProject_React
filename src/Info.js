@@ -20,9 +20,9 @@ return (
 <br/>
 {props.info.meanings.map(function(meaning, index) {
 return (
-<section key={index}>
+<div key={index}>
   <Meaning meaning={meaning} />
-  </section>
+  </div>
 );
 })}
     </div>
