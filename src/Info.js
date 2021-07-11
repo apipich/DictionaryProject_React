@@ -4,12 +4,10 @@ import Phonetic from "./Phonetic.js";
 import "./Info.css";
 
 export default function Info(props) {
-  console.log(props.info);
   if (props.info) {
 return (
   <div className="information">
     <section>
-    <br/>
     <h2>{props.info.word}</h2>
 {props.info.phonetics.map(function(phonetic, index) {
 return (
