@@ -36,7 +36,7 @@ return (
 <div className="dictionary">
   <section>
 <form onSubmit={handleSubmit}>
-  <input type="search" autoFocus={true} onChange={handleWord}/>
+  <input type="search" autoFocus={true} onChange={handleWord} defaultValue={props.defaultKeyword}/>
   <input type="submit" value="search"/>
 </form>
 <small>Search for a keyword: winter, trees, snow...</small>

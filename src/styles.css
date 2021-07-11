@@ -1,9 +1,17 @@
 .App {
   font-family: sans-serif;
   background: #DDEAF7;
+  max-width: 100%;
+  padding: 30px;
 }
 
 .myCode {
 text-align: center;
 margin-top: 50px;
+}
+
+h1 {
+font-family: 'Gochi Hand', cursive;
+font-size: 60px;
+text-align: center;
 }

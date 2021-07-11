@@ -2,3 +2,8 @@ h4 {
   font-family: 'Bad Script', cursive;
   font-size: 50px;
 }
+.example {
+font-style: italic;
+opacity: 0.7;
+line-height: 23px;
+}
