@@ -1,2 +1,6 @@
-.dictionary form {
+.dictionary section {
+background: white;
+padding: 7px;
+border-radius: 8px;
+box-shadow: 1px 1px 4px #000;
 }

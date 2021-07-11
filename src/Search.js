@@ -34,10 +34,12 @@ search();
 if (loaded) {
 return (
 <div className="dictionary">
+  <section>
 <form onSubmit={handleSubmit}>
   <input type="search" autoFocus={true} onChange={handleWord}/>
   <input type="submit" value="search"/>
 </form>
+</section>
 <Info info={info}/>
 </div>
 ) 

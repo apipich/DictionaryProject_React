@@ -8,6 +8,7 @@ export default function Info(props) {
   if (props.info) {
 return (
   <div className="information">
+    <section>
     <br/>
     <h2>{props.info.word}
     </h2>
@@ -18,17 +19,17 @@ return (
   </div>
 );
 })}
+</section>
 <br/>
 {props.info.meanings.map(function(meaning, index) {
 return (
-<div key={index}>
+<section key={index}>
   <Meaning meaning={meaning} />
-  </div>
+  </section>
 );
 })}
     </div>
 );
-
 } else {
   return null;
 }
