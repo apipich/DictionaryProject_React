@@ -39,7 +39,9 @@ return (
   <input type="search" autoFocus={true} onChange={handleWord}/>
   <input type="submit" value="search"/>
 </form>
+<small>Search for a keyword: winter, trees, snow, etc.</small>
 </section>
+<br />
 <Info info={info}/>
 </div>
 ) 

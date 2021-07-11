@@ -10,8 +10,7 @@ return (
   <div className="information">
     <section>
     <br/>
-    <h2>{props.info.word}
-    </h2>
+    <h2>{props.info.word}</h2>
 {props.info.phonetics.map(function(phonetic, index) {
 return (
 <div key={index}>

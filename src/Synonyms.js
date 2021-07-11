@@ -11,12 +11,11 @@ return (
 </li>
 )
 }
-    )
+)
 }
-
-    </ul>
-    );
-  } else {
+</ul>
+);
+} else {
 return null;
 }
 }
