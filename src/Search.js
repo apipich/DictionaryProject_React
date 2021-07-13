@@ -50,7 +50,7 @@ return (
   <input type="search" autoFocus={true} onChange={handleWord} defaultValue={props.defaultKeyword}/>
   <input type="submit" value="search"/>
 </form>
-<small>Search for a keyword: winter, trees, snow...</small>
+<small>Search for a keyword: winter, trees, ocean...</small>
 </section>
 <br />
 <Info info={info}/>
