@@ -1,4 +1,8 @@
 .col-4 {
-border-radius: 5px;
 margin-bottom: 20px;
+}
+
+.photos img {
+  border-radius: 8px;
+  border: 1px solid #D3D7DC;
 }
