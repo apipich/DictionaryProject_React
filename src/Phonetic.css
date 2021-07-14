@@ -1,9 +1,24 @@
 .fas.fa-headphones {
   color: #073461;
   font-size: 25px;
-  border: 1px solid #C6CDD5;
-  padding: 6px;
-  border-radius: 8px;
+  padding: 3px;
+}
+
+.fas.fa-headphones:hover {
+color: #E4E6E9;
+}
+
+.headphones {
+border-radius: 6px;
+border: 1px solid #C5C8CC;
+background-color: #E4E6E9;
+padding: 12px;
+width: 85px;
+}
+
+.headphones:hover {
+background-color: #073461;
+border: 1px solid #C5C8CC;
 }
 
 .text {
